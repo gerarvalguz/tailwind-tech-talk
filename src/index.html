@@ -1,12 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../dist/output.css" rel="stylesheet">
     <title>Tailwind tech talk</title>
   </head>
-  <body>    
-        
+  <body class="bg-gray-200">
+    <!-- 
+      Contenedor alineado al centro:
+        Container
+        Breakpoints
+        Spacing
+        Sizing
+        Colors
+        Pseudoclases
+        State
+        Pseudoelementos
+        Text
+        Background
+        Gradiente
+    -->
+    <!-- Class     Breakpoint   Properties
+        container	 None	        width: 100%;
+                  sm (640px)	  max-width: 640px;
+                  md (768px)	  max-width: 768px;
+                  lg (1024px)	  max-width: 1024px;
+                  xl (1280px)	  max-width: 1280px;
+                  2xl (1536px)	max-width: 1536px; 
+    -->
+    <div class="container mx-auto px-4 py-10 w-screen bg-gray-50">
+      <h1 class="text-pink-500 text-4xl">
+        Hi Softservians
+      </h1>
+      <span 
+        class="mt-3 after:content-['*'] after:ml-0.5 after:text-red-500 block 
+               text-sm font-medium text-gray-600">
+        Name
+      </span>
+      <input 
+        type="text" 
+        class="text-gray-600 placeholder-gray-400 border 
+               border-gray-400 rounded outline-0 px-2 py-1 mt-2 
+               focus:border-2 focus:border-pink-500 capitalize
+               peer invalid:border-pink-500 invalid:text-pink-600" 
+        placeholder="name"/>
+      <p class="invisible peer-invalid:visible text-pink-600 text-sm">
+        Please provide a valid email address.
+      </p>
+      <button class="btn-pink">
+        Accept
+      </button>
+      <button class="bg-gray-700 rounded-md text-gray-50 px-2 py-2 shadow-md
+                      border-2 border-dashed
+                     hover:bg-gray-500 mb-2">
+        Cancel
+      </button>
+    </div>
+
+    <div class="container mx-auto px-4 w-screen h-full bg-gray-50 mt-3">
+      <!-- Columnas -->
+      <div class="columns">
+        <div class="text-5xl font-extrabold">
+          <span 
+            class="bg-gradient-to-r from-pink-500 to-sky-500 bg-clip-text
+                   hover:from-sky-500 hover:to-indigo-500 
+                   text-transparent"> 
+            More examples
+          </span>
+        </div>
+        <div class="container mx-auto py-10">        
+          <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-10">
+              <div class="w-full h-40 bg-emerald-500 rounded mb-5"></div>
+              <div class="w-full h-40 bg-teal-500 rounded mb-5"></div>
+              <div class="w-full h-40 bg-cyan-500 rounded mb-5"></div>
+              <div class="w-full h-40 bg-sky-500 rounded mb-5"></div>
+              <div class="w-full h-40 bg-indigo-500 rounded mb-5"></div>
+              <div class="w-full h-40 bg-pink-500 rounded mb-5"></div>
+              <div class="w-full h-40 bg-red-500 rounded mb-5"></div>
+              <div class="w-full h-40 bg-gray-500 rounded mb-5"></div>
+          </div>  
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="table w-6/12 h-56 bg-red-100">
+          <div class="table-row-group">
+              <div class="table-row">
+                  <div class="table-cell bg-red-500">A cell with more content</div>
+                  <div class="table-cell bg-red-500 bg-opacity-30">Cell 2</div>
+                  <div class="table-cell bg-red-500">Cell 3</div>
+              </div>
+              <div class="table-row">
+                  <div class="table-cell bg-red-300">Cell 4</div>
+                  <div class="table-cell bg-red-500">A cell with more content</div>
+                  <div class="table-cell bg-red-300">Cell 6</div>
+              </div>
+          </div>
+      </div>
+      <!-- Posicionamiento -->    
+      <div class="container py-10">    
+        <div class="bg-blue-300 w-6/12 h-96 block">
+          <div class="bg-blue-500 w-20 h-20 sticky top-0"></div>
+          <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia sit porro fuga, dolor cumque vero facilis autem est modi ducimus atque, debitis officiis qui consectetur repudiandae inventore cum temporibus. Tempora iste qui, dignissimos voluptates excepturi illum explicabo architecto dolores, accusantium labore adipisci. Tempore blanditiis dignissimos nam voluptatum unde? Harum, ab nulla sunt voluptatem quidem cupiditate doloremque a consequatur obcaecati laudantium tenetur odit? Et tempore voluptatum perspiciatis earum ut id aspernatur ratione sed amet assumenda, dicta temporibus blanditiis consectetur voluptas voluptatem, iusto atque inventore vel obcaecati molestiae quidem odio, minima incidunt dignissimos! Excepturi doloremque voluptatibus culpa officiis ullam obcaecati. Veritatis animi ratione eaque eligendi consequuntur quas odit optio, quae cum, ut reprehenderit sed autem rerum exercitationem voluptas sit officiis consectetur iusto? Tenetur blanditiis enim animi quia nisi eos hic itaque quos, consequatur at rem maiores repellat neque dicta sed excepturi. Facere molestiae reprehenderit optio eveniet suscipit corporis error. Beatae, a quia illum ut libero nostrum esse maxime quo amet facere perferendis architecto perspiciatis, rerum, laudantium ad nobis voluptas eaque totam. Dolorum dolores laboriosam consectetur illo nemo atque quibusdam odit odio deleniti voluptate, labore eius distinctio blanditiis delectus aliquam natus quod. Voluptatibus voluptas veritatis mollitia ad doloribus, cum, excepturi laboriosam, repellendus tempore quaerat porro eius facilis! Eos maxime, aut dolorem, in quos repellendus corporis enim dolores ut excepturi quo illum repellat cum? Consequuntur natus illo vitae error quaerat atque vero ipsum. Vitae suscipit velit delectus quas id optio, libero explicabo ut? Natus, voluptatum! Non, distinctio obcaecati praesentium quidem, eum molestiae aut unde facilis incidunt dignissimos tempore pariatur veniam ipsa eaque placeat qui assumenda sapiente commodi quasi doloremque corrupti labore! Dolorem numquam a minima unde quae, similique doloribus modi aliquam ad enim perspiciatis sed magnam illum reprehenderit corporis facere! Ut, vero harum? Atque aliquid itaque voluptatem eius quos excepturi nihil. Maxime ducimus perferendis fugiat ad iusto ea veniam voluptate quibusdam eos dolorem aperiam maiores eum ullam, provident id officiis deserunt? Nulla temporibus sed quaerat ullam quibusdam repudiandae natus obcaecati architecto eius veniam, explicabo odit. Facilis magnam error est voluptates ad magni totam consequuntur molestias, mollitia architecto quisquam itaque voluptas placeat fuga dolor, non provident, blanditiis pariatur et aperiam adipisci suscipit. Corporis sunt mollitia iure consequuntur maxime qui quae ipsam, distinctio error aliquam vel nobis hic dicta doloremque provident repudiandae officia alias? Necessitatibus magnam vitae odit amet eius laudantium obcaecati voluptas accusamus. Dolores quos nemo ab sint rem, culpa, non velit nulla modi pariatur nisi quia provident fugiat iure sapiente quo minus perferendis ducimus quas necessitatibus! Deleniti aspernatur quod et deserunt corporis obcaecati quia temporibus, repudiandae aperiam. Laborum deleniti voluptate soluta. Ipsa, incidunt! Quae, debitis consequatur. Facere cum dignissimos incidunt quo fugit excepturi eveniet similique iusto hic? Fugit nostrum laudantium mollitia nam, placeat quod quidem a, sint totam ipsa maiores officiis pariatur eum aliquid. Culpa ut illum dolorum temporibus sunt cupiditate autem magni quas molestiae quaerat dolor ducimus saepe eum inventore animi praesentium ex incidunt cum omnis, nesciunt eius ullam nostrum? Laborum unde enim, at quaerat doloribus nemo sint quisquam, odio eligendi porro magnam asperiores quidem. Id est nam, numquam a commodi reiciendis, tempora hic eaque ad praesentium natus, fugiat doloremque at quia. Qui fugit a vero enim quibusdam, nihil eos veniam excepturi reiciendis nemo aspernatur ipsam odit beatae nobis repellat? Accusamus itaque quam incidunt esse quae! Aperiam aliquam, repellendus impedit, eum commodi eveniet ducimus quidem voluptatibus ipsa asperiores corporis id assumenda minus non velit! Architecto eos est quia, officiis similique nemo quam amet neque? Aut expedita, delectus maiores veritatis inventore eos, nam corporis voluptates, praesentium sed aliquid culpa animi magni ut? Assumenda facilis, veritatis, perferendis vero non voluptatibus, velit at reprehenderit voluptate atque fugit nesciunt? Consequuntur sit consequatur ullam magni, distinctio aperiam blanditiis sunt eaque tempore cupiditate corrupti beatae, veritatis nam sed deserunt. Esse itaque, sapiente reiciendis sunt aspernatur dolorum dolor quaerat facere quidem, similique accusantium placeat quibusdam eius ipsa, commodi recusandae voluptas asperiores nam unde. Aliquid facilis nesciunt laboriosam vero! Debitis maxime earum odit dolor facilis molestias enim impedit numquam temporibus rem inventore aliquam a dolore aperiam, necessitatibus officia ea et sint atque hic distinctio? Error expedita doloribus reiciendis voluptatum harum vero ipsam blanditiis dolorem incidunt nam assumenda odio accusantium magni aliquam quod animi, optio tempora iusto porro amet? Non, eius labore quae quam et soluta magnam magni ea sed necessitatibus voluptatem commodi, alias nihil eaque iure natus, animi incidunt minima asperiores placeat! Nesciunt id delectus sunt veritatis voluptatibus aliquam vitae harum rem, earum officiis tenetur praesentium, magni nam atque cupiditate. Sed, ullam aperiam. Perspiciatis quaerat incidunt dolores blanditiis earum modi eum iusto pariatur. Porro, dicta vel perspiciatis quod quia repellat dolorum animi libero totam, inventore id nemo fuga odio. Nisi, a? Molestias neque aspernatur officia ex maiores praesentium soluta beatae at? Libero ea, iusto explicabo, fugit dignissimos ducimus perspiciatis, ratione eius exercitationem quidem magnam inventore soluta odio asperiores. Aperiam, iste! Itaque voluptatem molestias quis? Nobis recusandae, cupiditate quidem nostrum soluta temporibus, ratione neque quod perferendis ullam, aspernatur voluptatum dolores ea. Dolore voluptatum facere enim officia eos! Error inventore optio ad temporibus rerum laudantium eligendi dolorem repellat aut facere, veniam consequatur nemo sunt? Omnis distinctio quisquam deleniti iusto! Quos soluta eveniet odio voluptatum. Maxime aliquam, repellendus doloremque ea blanditiis eveniet aut molestias laudantium nesciunt. Iusto vitae doloribus ipsa aliquid id qui accusamus eveniet magnam officiis vero, culpa dolore minus nisi asperiores, saepe perspiciatis commodi porro? Libero eos incidunt possimus cumque pariatur blanditiis doloremque nihil adipisci. At, labore quos incidunt ea quidem, in illum, esse expedita voluptatibus quam ratione unde cupiditate eaque! Aliquid cum natus molestiae libero sit itaque quo enim, repudiandae, dolor quidem obcaecati officiis labore consequuntur maiores fugit. Vero quia, officiis soluta illo labore, quo ratione aut tenetur, iste quisquam voluptatum possimus odit nobis dolore maxime beatae minima recusandae inventore culpa molestias alias ipsa! Aperiam harum eum nam praesentium nobis ullam ab esse. Excepturi expedita veniam enim officiis culpa doloremque ullam fugiat? Totam ex praesentium obcaecati veniam officia quasi. Excepturi maiores nemo mollitia praesentium fugit. Repellat quaerat velit recusandae magnam itaque unde deleniti est nobis numquam quo maxime impedit, possimus aliquid!</p> -->
+        </div> 
+        <!-- Valores arbitrarios --> 
+        <div class="bg-[#bada55] w-[600px] h-96 block mt-10 px-3 pt-5">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis a molestiae ut quibusdam reprehenderit error dolor, voluptas culpa enim perspiciatis odio repellat et quia amet aut pariatur esse deserunt quae ad est delectus nihil non facilis ipsa! Fugiat ipsum ipsa inventore maiores, veritatis adipisci aliquid ad quisquam voluptatem odit ea sunt vitae minus molestiae porro possimus similique dolore modi architecto voluptatum perferendis? Sit, tempora? Quaerat tenetur neque quidem earum nam voluptatibus explicabo atque est, reprehenderit suscipit perspiciatis! Nemo ullam autem maxime. Repudiandae, nobis? Impedit optio sed laboriosam repudiandae perspiciatis nulla omnis recusandae mollitia, reiciendis voluptates blanditiis adipisci animi error vero!</p>
+        </div> 
+        <!-- Card & Link -->
+        <div class="card block mtx">
+          <a href="test.html">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, doloremque.
+          </a>
+          <a href="dark.html">
+            Dark mode
+          </a>
+        </div> 
+
+      </div>
+    </div>
+    
+
+
   </body>
 </html>

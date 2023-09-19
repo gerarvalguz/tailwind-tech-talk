@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    a{
+        @apply text-emerald-600 font-bold text-lg px-3
+        /* @apply text-primary font-bold text-lg */
+    }
+}
+
+@layer components {
+    .card {
+      background-color: theme(colors.white);
+      border-radius: theme(borderRadius.lg);
+      box-shadow: theme(boxShadow.xl);
+      width: 50vw;
+      height: 20vh;
+    }
+
+    
+    .btn-pink {
+        @apply bg-pink-700 rounded-md text-gray-50 px-2 py-2 shadow-md hover:bg-pink-500 mb-2
+        /* @apply bg-blackpink rounded-md text-white px-2 py-2 shadow-md hover:bg-lightpink mb-2 */
+    }
+  }
+
+@layer utilities {
+    .mtx{
+        @apply mt-36
+    }
+}
